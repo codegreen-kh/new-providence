@@ -1,0 +1,62 @@
+@import mixins
+@import normalize
+@import fonts
+@import media
+@import main
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 400
+h1 
+    font-size: 62px
+    line-height: 72px
+h2 
+    font-size: 52px
+    line-height: 52px
+    margin-bottom: 64px
+h3 
+    font-size: 32px
+    line-height: 38px
+    font-weight: 300
+    margin-bottom: 46px
+h4 
+    font-size: 26px
+    line-height: 34px
+    font-weight: 300
+    margin-bottom: 25px
+p.subtitle 
+    font-size: 12px
+    letter-spacing: 0.1em
+    font-weight: 700
+    text-transform: uppercase
+p
+    font-size: 18px
+    line-height: 28px
+    color: #8c8f94
+    padding: 0 0 20px 0
+.left
+    float: left
+.right
+    float: right
+.btn
+    border-radius: 30px
+    border: 1px solid
+    border-color: rgba(38, 39, 45, 0.1)
+    color: #000
+.btn-blue
+    background-color: #267df4
+    color: #fff
+    &:hover
+        color: #fff
+        border: none
+        background-color: #270EFA
+        transition-property: background-color, color
+        transition-duration: 3s
+        transition-delay: 0s, 1s
+        transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear
+.active
+    background-color: #fff !important
+    padding: 24px 0 !important
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15)
+    -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15)
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15)
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15)

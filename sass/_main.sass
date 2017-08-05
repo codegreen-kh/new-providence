@@ -1,0 +1,291 @@
+#main-nav
+    padding: 60px 0
+    font-family: 'Lato', regular
+    position: fixed
+    background-color: transparent
+    z-index: 200
+    width: 100%
+    webkit-transition: all 0.37s cubic-bezier(0, 0, 0.58, 1)
+    transition: all 0.37s cubic-bezier(0, 0, 0.58, 1)
+    .logo
+        line-height: 42px
+    #navigation
+        color: #000
+        position: absolute
+        line-height: 42px
+        z-index: 150
+        i
+            width: 20px
+            &:before
+                font-size: 20px
+    #slide-out-menu
+        position: fixed
+        display: block
+        width: 380px
+        max-width: 650px
+        height: 100%
+        left: -380px
+        top: 0
+        padding: 40px
+        z-index: 500
+        background: #ACB1CC
+        transition: left 0.7s cubic-bezier(0.545, 0, 0.05, 1)
+    #slide-out-menu.open
+        left: 0
+    .slide-out-header
+        position: absolute
+        display: block
+    .slide-out-footer
+        position: absolute
+        display: block
+        width: 100%
+        left: 0
+        bottom: 0
+        padding: 20px 40px 25px
+    .menu-close
+        position: absolute
+        top: 52px
+        left: 320px
+        i
+            font-size: 20px
+    ul.slide-out-items
+        display: block !important
+        li
+            display: block
+            padding: 0
+    ul.socials
+        display: block !important
+        li
+            background-color: red
+            border-radius: 50%
+            width: 50px
+            height: 50px
+            line-height: 50px
+            &:hover
+                color: #fff
+                background-color: green
+            .fa-google-plus
+                position: relative
+                right: 4px
+            &:first-of-type
+                display: block
+                margin-bottom: 30px
+                background-color: transparent
+                padding: 0
+            a
+                color: #fff
+                &:hover
+                    color: #fff
+    ul
+        list-style-type: none
+        padding: 0
+        margin: 0
+        line-height: 42px
+        white-space: nowrap
+        @include respond-to(medium-screens)
+            display: none
+        @include respond-to(handhelds)
+            display: none
+        li
+            display: inline-block
+            padding: 0 20px
+            a
+                font-size: 16px
+                color: #000
+                &:hover
+                    color: #267df4
+                    text-decoration: none
+            a.help
+                color: rgba(27, 28, 30, 0.4)
+    ul.right
+        li
+            &:last-of-type
+                padding-right: 0 !important
+    .btn
+        border-radius: 30px
+        width: 132px
+        height: 42px
+        color: #fff
+        padding: 9px 16px
+        i
+            padding-right: 12px
+    .left
+        margin-left: 30px !important
+#header
+    top: 0
+    padding: 200px 0 510px 0
+    height: 1005px
+    background-image: url("../img/background-image.png")
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    position: relative
+    overflow: hidden
+    @include respond-to(medium-screens)
+        height: 1100px
+    @include respond-to(handhelds)
+        height: 1200px
+    @include respond-to(between-tablet-screens)
+        height: 1100px
+    @include respond-to(between-handhelds-screens)
+        height: 1200px
+    @include respond-to(between-phone-xlarge-screens)
+        height: 1100px
+    h1
+        margin: 30px 0
+        position: relative
+        top: -20px
+    p
+        position: relative
+        top: -20px
+    a
+        position: relative
+        top: 20px
+    a.video-btn
+        border-width: 1px
+        border-color:  rgba(38, 39, 45, 0.1)
+        border-style: solid
+        width: 205px
+        height: 50px
+        line-height: 35px
+        border-radius: 30px
+        color: #000
+        .fa-play
+            padding: 0 15px 0 0
+    .header-iphone
+        position: absolute
+        bottom: -310px
+        left: 50%
+        margin-left: -185px
+        vertical-align: middle
+#features
+    .feature-item
+        padding: 20px 20px 0 20px
+        .f-icon
+            margin-bottom: 30px
+            i
+                color: #267df4
+                font-size: 42px
+    .features-border
+        border-bottom: 1px solid
+        border-color: rgba(38, 39, 45, 0.05)
+        padding: 40px 0
+#iphone-feature
+    padding: 100px 0 100px 0
+    .right-section
+        z-index: 100
+        .btn
+            margin: 40px 15px 0 15px
+        .btn-blue
+            width: 202px
+            height: 42px
+            line-height: 28px
+            padding-left: 30px
+            .fa-arrow-right
+                padding: 0 19px 0 40px
+        .learn-more
+            padding-left: 32px
+            padding-right: 32px
+            height: 42px
+            line-height: 28px
+            width: 142px
+    .iphone-feature-img
+        position: absolute
+        width: 50%
+        left: 0px
+        .iphone-image
+            padding: 0
+#map-feature
+    padding: 100px 0 100px 0
+    .map-feature-img
+        position: absolute
+        right: 0px
+        margin-top: 50px
+        .map-img
+            padding-right: 0
+    .left-section
+        .partners
+            .title
+                margin: 30px 0
+                font-weight: 700
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                font-size: 12px
+            ul
+                margin: 0
+                padding: 0
+                list-style-type: none
+                li
+                    display: inline-block
+                    padding-right: 30px
+#interface
+    background-color: #f5f5f8
+    padding: 100px 0
+    h2.title
+        margin-bottom: 0
+    .border-bottom
+        border: 2px solid
+        width: 50px
+        margin: 45px auto
+        border-color: #267df4
+    .carousel-iphone
+        padding: 0 10px
+#ready-to-buy
+    padding: 0 0 100px 0
+    background-color: #f5f5f8
+    .rtb-logo
+        span
+            text-transform: uppercase
+            font-size: 12px
+            color:  rgba(58, 61, 75, 0.3)
+            font-weight: 400
+            &:first-of-type
+                font-weight: 600
+    h2
+        font-size: 42px
+        color: rgba(58, 61, 75, 0.3)
+    p.subtitle
+        color: rgba(58, 61, 75, 0.3)
+        padding: 40px 0 0 0
+    .form-group
+        display: block
+        width: 500px
+        max-width: 100%
+        height: 50px
+        margin: 20px auto
+        border: 1px solid
+        line-height: 46px
+        border-radius: 30px
+        border-color: rgba(34, 35, 40, 0.2)
+        .btn-green
+            float: right
+            height: 44px
+            line-height: 35px
+            margin: 2px 2px 2px 2px
+            width: 165px
+            background-color:  #6fc754
+            border: none
+    input
+        float: left
+        height: 48px
+        width: 270px
+        margin: 0 25px
+        border: none
+        color: #000
+        background-color: #f5f5f8
+    .btn-dark
+        background-color: #131315
+        color: #fff
+        width: 210px
+        .fa-apple
+            font-size: 28px
+            position: relative
+            top: -5px
+            left: -20px
+        .app-store
+            font-size: 20px
+        span
+            display: inline-block
+            .app-store
+                font-size: 22px
+                line-height: 18px
